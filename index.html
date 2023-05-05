@@ -1,0 +1,68 @@
+<head>
+  <meta charset="utf-8">
+  <title>Capstone Project</title>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+
+<style>
+  @keyframes gradient-pulse {
+    0%{
+      background-image: linear-gradient(down, #ff6666, #ffb380);
+    }
+    50%{
+      background-image: linear-gradient(down, #ffb380, #ff6666);
+    }
+    100%{
+      background-image: linear-gradient(down, #ff6666, #ffb380);
+    }
+  }
+  
+    @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(10%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  body{
+    background-image: linear-gradient(#ff6666, #ffb380);
+    animation-name: gradient-pulse;
+    animation duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  
+</style>
+
+
+<a-scene>
+  <a-plane color="#ff6666" width="2" height="40" rotation="-90 0 0" position="0 0 -5" movement-controls="speed: 0.001"></a-plane>
+  
+  <a-sphere id="salsa-sphere1" position="2 2 -5" radius=".4" color="#e0ffff" opacity"0"></a-sphere>
+  <a-sphere id="salsa-sphere2" position="10 2 -16" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere3" position="-2 10 -15" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere4" position="0 8 -5" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere5" position="-8 1.5 -10" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere6" position="-3 4.7 -8" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere7" position="6 3 -4" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere8" position="-2 2 -12" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere9" position="-1 8 1" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere10" position="0 6 10" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere11" position="2 5 6" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere12" position="4 2 -16" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere13" position="3 7 9" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere14" position="-2 4 3" radius=".4" color="#ff7f50"></a-sphere>
+  <a-sphere id="salsa-sphere15" position="-5 6 8" radius=".4" color="#ff7f50"></a-sphere>
+  
+  
+  
+</a-scene>
+
